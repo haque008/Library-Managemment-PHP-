@@ -73,7 +73,7 @@ include "connection.php";
            if(isset($_POST['submit']))
            {
 
-              mysqli_query($db,"insert into librarymanagement values('','$_POST[firstname]','$_POST[lastname]','$_POST[username]','$_POST[password]','$_POST[email]','$_POST[contact]','$_POST[sem]','$_POST[enrollmentno]','inactive')");
+              mysqli_query($db,"insert into librarymanagement values('','$_POST[firstname]','$_POST[lastname]','$_POST[username]','$_POST[password]','$_POST[email]','$_POST[contact]','$_POST[sem]','$_POST[enrollmentno]','restrict')");
               ?>
 
                     <div class="alert alert-success">Registration successfull </div>

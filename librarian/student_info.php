@@ -9,7 +9,7 @@ include "connection.php";
             <div class="">
                 <div class="page-title">
                     <div class="title_left">
-                        <h3>Plain Page</h3>
+                        <h3>Student List</h3>
                     </div>
 
                     <div class="title_right">
@@ -29,7 +29,7 @@ include "connection.php";
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2>Plain Page </h2>
+                                <h2>Student </h2>
 
                                 <div class="clearfix"></div>
                             </div>
@@ -47,6 +47,8 @@ include "connection.php";
                                                      echo "<th>";echo "Sem"; echo "</th>";
                                                       echo "<th>";echo "Enrolement"; echo "</th>";
                                                        echo "<th>";echo "status"; echo "</th>";
+                                                       echo "<th>";echo "Action"; echo "</th>";
+                                                       echo "<th>";echo "Action"; echo "</th>";
                                                     
 
                                                
@@ -62,6 +64,8 @@ include "connection.php";
                                                      echo "<td>";echo $row["sem"]; echo "</td>";
                                                       echo "<td>";echo $row["enrollmentno"]; echo "</td>";
                                                        echo "<td>";echo $row["status"]; echo "</td>";
+                                                        echo "<td>"; ?> <a class="btn btn-success" href="approve.php?id= <?php echo $row["id"];?>">Approve</a> <?php echo "</td>";
+                                                         echo "<td>"; ?> <a class="btn btn-danger"  href="restrict.php?id= <?php echo $row["id"];?>">Restrict</a> <?php echo "</td>";
                                                    
                                                
                                                
@@ -86,3 +90,4 @@ include "connection.php";
 include "footer.php";
 ?>
        
+ 
